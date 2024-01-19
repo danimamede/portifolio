@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --primary-color: #000000;
-    --secondary-color: #f6f6f6;
-    --tertiary-color: #22d4fd;
-    --hover: #272727;
+    --primary-color: #222831;
+    --secondary-color: #f7f7f7;
+    --tertiary-color: #00ADB5;
+    --hover: #393E46;
+
+    --title-font: 'Krona One', sans-serif;
+    --text-font: 'Montserrat', sans-serif;
 }
 
 /* CSS reset */
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -30,11 +34,10 @@ body {
 }
 
 .menu__navigation__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--text-font);
     font-size: 24px;
     font-weight: 600;
     color: var(--tertiary-color);
-    text-decoration: none;
 }
 
 .presentation {
@@ -53,7 +56,7 @@ body {
 
 .presentation__title {
     font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--title-font);
 }
 
 .title-highlight {
@@ -62,7 +65,7 @@ body {
 
 .presentation__text {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--text-font);
 }
 
 .presentation__links {
@@ -76,7 +79,7 @@ body {
 .presentation__subtitle {
     font-size: 24x;
     font-weight: 400;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--title-font);
 }
 
 .presentation__button {
@@ -91,9 +94,8 @@ body {
     text-align: center;
     font-size: 24px;
     padding: 21.5px 0;
-    text-decoration: none;
     color: var(--secondary-color);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--text-font);
     font-weight: 600;
 }
 
@@ -102,10 +104,10 @@ body {
 }
 
 .rights {
-    padding: 24px;
+    padding: 18px;
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--text-font);
     font-size: 24px;
 }
