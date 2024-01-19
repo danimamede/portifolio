@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --primary-color: #000000;
+    --secondary-color: #f6f6f6;
+    --tertiary-color: #22d4fd;
+    --hover: #272727;
+}
+
 /* CSS reset */
 * {
     margin: 0;
@@ -9,8 +16,8 @@
 body {
     /* height: 100vh; */
     box-sizing: border-box;
-    background-color: #000000; 
-    color: #F6F6F6;   
+    background-color: var(--primary-color); 
+    color: var(--secondary-color);
 }
 
 .menu {
@@ -26,7 +33,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 600;
-    color:#22D4FD;
+    color: var(--tertiary-color);
     text-decoration: none;
 }
 
@@ -50,7 +57,7 @@ body {
 }
 
 .title-highlight {
-    color: #22D4FD;
+    color: var(--tertiary-color);
 }
 
 .presentation__text {
@@ -79,25 +86,25 @@ body {
     align-items: center;
     gap: 16px;
     width: 378px;
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--tertiary-color);
     border-radius: 8px;
     text-align: center;
     font-size: 24px;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
 .presentation__button:hover {
-    background-color: #272727;
+    background-color: var(--hover);
 }
 
 .rights {
     padding: 24px;
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
