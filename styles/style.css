@@ -45,10 +45,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentation__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -88,7 +89,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     border: 2px solid var(--tertiary-color);
     border-radius: 8px;
     text-align: center;
@@ -103,6 +104,10 @@ body {
     background-color: var(--hover);
 }
 
+.presentation__image {
+    width: 50%;
+}
+
 .rights {
     padding: 18px;
     color: var(--primary-color);
@@ -110,4 +115,23 @@ body {
     text-align: center;
     font-family: var(--text-font);
     font-size: 1.25rem;
+}
+
+@media (max-width: 1200px) {
+    .menu {
+        padding: 10%;
+    }
+
+    .manu__navigation {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
 }
